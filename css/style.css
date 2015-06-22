@@ -27,14 +27,18 @@ div.me {
   background-image: url(../img/me.jpg);
 }
 
-img.me_small {
+.div-me-small {
+  width:25%;
+}
+
+img.me-small {
   width: auto;
   height: auto;
 }
 
 @media only screen and (max-width:1000px) {
 
-  div.me {
+  .me {
     display: none;
   }
 
@@ -50,7 +54,7 @@ img.me_small {
 
 @media only screen and (min-width:1000px) {
 
-  img.me_small {
+  .me-small {
     display: none;
   }
 
@@ -66,10 +70,11 @@ img.me_small {
 
 @media only screen and (max-width:412px) {
 
-  img.me_small {
+  .me-small {
     display: none;
   }
 }
+
 body {
   font-family: 'Lato', sans-serif;
   color: #676858;
