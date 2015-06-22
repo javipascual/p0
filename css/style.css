@@ -1,0 +1,128 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  margin-right: 20px;
+}
+
+* {
+  width:100%;
+}
+
+img, embed, object, video {
+  max-width:100%;
+}
+
+p a, nav a, button {
+  min-width: 48px;
+  min-height: 48px;
+  padding: 1.5em;
+}
+
+nav.connect nav: {
+  float: right;
+}
+
+@media only screen and (max-width:1000px) {
+
+  .mypic {
+    display: none;
+  }
+
+  ul {
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .title-super {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width:1000px) {
+  ul {
+    font-size: 25px;
+    padding: 40px 20px 20px 40px;
+  }
+
+  .title-super {
+    font-size: 5em;
+  }
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #676858;
+  font-weight: 300;
+}
+
+hr {
+  color: #676858;
+  height: 5px;
+}
+
+a:focus, a:hover {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+.text-muted {
+  color: #BCBBBB;
+}
+
+.text-thin{
+  font-weigth: 100;
+}
+
+.title-logo{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img.project {
+  max-width: 400px;
+  max-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.connect, .modal-header {
+  background-color: #676858;
+}
+
+.connect nav a {
+  font-size: 2em;
+}
+
+.modal-title, .modal-header button {
+  color: #FFFFFF;
+  width:auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul.position {
+  font-size: 1.5em;
+}
+
+ul.publications{
+  padding-top: 10px;
+}
+
+ul.publications li {
+  padding: 10px 0 10px 0;
+}
+
+ul.publications li p {
+  margin: 0 0 0 0;
+}
+
+.pub-title {
+  font-size: 0.7em;
+}
+
+.pub-authors, .pub-journal {
+  font-size: 0.5em;
+}
