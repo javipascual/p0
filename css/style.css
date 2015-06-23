@@ -11,88 +11,47 @@ img, embed, object, video {
   max-width:100%;
 }
 
-p a, nav a, button {
+a {
   min-width: 48px;
   min-height: 48px;
   padding: 1.5em;
 }
 
-nav.connect nav: {
-  float: right;
-}
-
-div.me {
-  height:400px;
-  background-size: cover;
-  background-image: url(../img/me.jpg);
-}
-
-.div-me-small {
-  width:25%;
-}
-
-img.me-small {
+.me-small {
   width: auto;
   height: auto;
-}
-
-@media only screen and (max-width:1000px) {
-
-  .me {
-    display: none;
-  }
-
-  ul {
-    font-size: 20px;
-    padding: 20px 20px 20px 20px;
-  }
-
-  .title-super {
-    font-size: 2em;
-  }
-}
-
-@media only screen and (min-width:1000px) {
-
-  .me-small {
-    display: none;
-  }
-
-  ul {
-    font-size: 25px;
-    padding: 40px 20px 20px 40px;
-  }
-
-  .title-super {
-    font-size: 5em;
-  }
-}
-
-@media only screen and (max-width:412px) {
-
-  .me-small {
-    display: none;
-  }
 }
 
 body {
   font-family: 'Lato', sans-serif;
   color: #676858;
-  font-weight: 300;
 }
 
 hr {
   color: #676858;
-  height: 5px;
+  margin: 10px 0 10px 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
 }
 
 a:focus, a:hover {
-  color: #EEEEEE;
+  color: #eee;
   text-decoration: none;
 }
 
+.title-super {
+  font-size: 1.5em;
+}
+
 .text-muted {
-  color: #BCBBBB;
+  color: #bbb;
 }
 
 .text-thin{
@@ -101,10 +60,13 @@ a:focus, a:hover {
 
 .title-logo{
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-img.project {
+.me {
+  display: none;
+}
+
+.project {
   max-width: 400px;
   max-height: 250px;
   margin-left: auto;
@@ -120,7 +82,7 @@ img.project {
 }
 
 .modal-title, .modal-header button {
-  color: #FFFFFF;
+  color: white;
   width:auto;
 }
 
@@ -128,19 +90,19 @@ ul {
   list-style-type: none;
 }
 
-ul.position {
-  font-size: 1.5em;
+.position {
+  font-size: 1em;
 }
 
-ul.publications{
+.publications{
   padding-top: 10px;
 }
 
-ul.publications li {
+.publications li {
   padding: 10px 0 10px 0;
 }
 
-ul.publications li p {
+.publications li p {
   margin: 0 0 0 0;
 }
 
@@ -150,4 +112,41 @@ ul.publications li p {
 
 .pub-authors, .pub-journal {
   font-size: 0.5em;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h2 {
+    font-size: 2.4em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  ul {
+    font-size: 25px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .position {
+    font-size: 1.5em;
+  }
+
+  hr {
+    margin: 20px 0 20px 0;
+  }
+
+  .title-super {
+    font-size: 5em;
+  }
+
+  .me-small {
+    display: none;
+  }
+
+  .me {
+    display: block;
+    margin-right: 20px;
+  }
 }
